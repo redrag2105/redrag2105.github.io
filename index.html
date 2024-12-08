@@ -18,184 +18,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000" />
   <meta name="description"
     content="ReDrag Tran | Portfolio, Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
   <meta name="keywords"
     content="ReDrag Tran,ReDrag Tran portfolio,ReDrag Tran Portfolio,redrag,ReDrag Tran site,ReDrag Tran Site,ReDrag Tran me,ReDrag Tran web,ReDrag Tran github,redrag site,redrag uiverse,uiverse,ReDrag Tran uiverse,ReDrag Tran frontend developer,frontend developer,ReDrag,redrag21" />
   <meta name="author" content="ReDrag Tran" />
-  <meta property="og:image" content="https://redrag2105.github.io/src/png/page_preview.png" />
+  <meta property="og:image" content="https://redrag2105.github.io/assets/png/page_preview.png" />
   <meta property="og:title" content="ReDrag Tran | Portfolio" />
   <meta property="og:description"
     content="Hi! My name is ReDrag. I'm a web developer and digital visual artist. Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
-
   <meta property="og:url" content="https://redrag2105.github.io" />
   <meta property="og:site_name" content="ReDrag Tran Portfolio" />
 
-  <meta name="twitter:image:src" content="https://redrag2105.github.io/src/png/page_preview.png" />
+  <meta name="twitter:image:src" content="https://redrag2105.github.io/assets/png/page_preview.png" />
   <meta name="twitter:site" content="@Portfolio" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="ReDrag Tran | Portfolio" />
   <meta name="twitter:description"
-  content="Hi! My name is ReDrag. I'm a web developer and digital visual artist. Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
+    content="Hi! My name is ReDrag. I'm a web developer and digital visual artist. Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
   <title>ReDrag Tran | Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="src/png/favicon.png" />
-  <!-- aos cdn -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- google fonts-->
+  <link rel="icon" type="image/x-icon" href="assets/webp/favicon.webp" />
+  <!-- CDN -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
+  </script>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/Styles/blogs.css">
+  <link rel="stylesheet" href="assets/Styles/settings.css">
+  <link rel="stylesheet" href="assets/Styles/skills.css">
+
+  <!-- Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+    href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400&family=Roboto+Mono:wght@700&display=swap">
+
+</head>
 
 <body class="body">
   <audio loop="" id="audioPlayer" style="display: none">
-    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+    <source src="assets/mp3/bgsong.mp3" type="audio/mp3" />
   </audio>
   <div id="preloader"></div>
   <noscript>Allow Javascript</noscript>
 
-  <header>
+  <!--========== HEADER ==========-->
+  <header id="home">
     <div class="cursor-inner" id="cursor-inner"></div>
     <div class="cursor-outer" id="cursor-outer"></div>
 
+    <!--========== NAVBAR TABS ==========-->
     <div class="navbar" id="navbar">
       <div class="hey">Xin Chao!</div>
-      <div class="logo" tabindex="0" aria-label="ReDrag Tran logo">
+      <div class="logo" aria-label="ReDrag Tran logo">
         <div class="logo-top">
-          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/>
+          <img src="assets/webp/nav-avatar.webp" alt="animation-head" id="nav-avatar" loading="lazy" />
         </div>
       </div>
       <div class="navbar-tabs" id="navbar-tabs">
         <ul class="navbar-tabs-ul">
-          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
-            <a href="#home" tabindex="0" aria-label="Home menu button">
-              &#60;/Home&#62;
+          <li class="home activeThistab" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" aria-label="Home menu button">
+              &lt;/Home&gt; <span></span>
             </a>
           </li>
 
-          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+          <li class="about" data-aos="fade-down" data-aos-delay="300">
             <a href="#about" aria-label="about menu button">
-              &#60;/AboutMe&#62;
+              &lt;/AboutMe&gt; <span></span>
             </a>
           </li>
 
-          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+          <li class="skills" data-aos="fade-down" data-aos-delay="500">
             <a href="#skills" aria-label="skills menu button">
-              &#60;/Skills&#62;
+              &lt;/Skills&gt; <span></span>
             </a>
           </li>
 
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+          <li class="projects" data-aos="fade-down" data-aos-delay="700">
             <a href="#projects" aria-label="projects menu button">
-              &#60;/Projects&#62;
+              &lt;/Projects&gt; <span></span>
             </a>
           </li>
         </ul>
       </div>
-      <!-- navbar tabs ends -->
     </div>
   </header>
-  <!-- header ends here -->
 
+  <!--========== MAIN ==========-->
   <main>
-    <!-- hamburger -->
+    <!--========== HAMBURGER MENU==========-->
     <div class="hamburger" id="hamburger" data-aos="fade">
       <div class="hamburgerbase">
-        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+        <button id="hamburger-button" aria-label="Menu Button">
           <span class="burger-bar" id="burger-bar1"></span>
           <span class="burger-bar" id="burger-bar2"></span>
           <span class="burger-bar" id="burger-bar3"></span>
         </button>
       </div>
     </div>
-    <!-- hamburger -->
+    <!--========== MOBILE TOGGLE MENU ==========-->
     <div class="mobiletogglemenu" id="mobiletogglemenu">
       <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">
-            &#60;/Home&#62;
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab">
+          <a href="#home" aria-label="Home menu button">
+            &lt;/Home&gt;
           </a>
         </li>
 
-        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-          <a href="#about" tabindex="0" aria-label="about menu button">
-            &#60;/AboutMe&#62;
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about">
+          <a href="#about" aria-label="about menu button">
+            &lt;/AboutMe&gt;
           </a>
         </li>
-        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
-          <a href="#skills" tabindex="0" aria-label="skills menu button">
-            &#60;/Skills&#62;
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills">
+          <a href="#skills" aria-label="skills menu button">
+            &lt;/Skills&gt;
           </a>
         </li>
-        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-          <a href="#projects" tabindex="0" aria-label="projects menu button">
-            &#60;/Projects&#62;
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects">
+          <a href="#projects" aria-label="projects menu button">
+            &lt;/Projects&gt;
           </a>
         </li>
       </ul>
     </div>
-    <!-- mobile toggle menu ends -->
 
-    <section class="landing-page-container" id="home">
+    <!--========== LANDING PAGE ==========-->
+    <section class="landing-page-container">
       <div class="blob"></div>
 
       <div class="text-content">
         <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
-          <p class="jello">H</p>
-          <p class="jello">e</p>
-          <p class="jello">l</p>
-          <p class="jello">l</p>
-          <p class="jello">0</p>
-          <p class="jello">(</p>
-          <p class="jello">)</p>
-          <p class="jello">;</p>
-          &nbsp;
-          <p class="jello">I</p>
-          <p class="jello">'</p>
-          <p class="jello">m</p>
+          <p class="jello-text">Hell0(); I'm</p>
         </article>
         <article id="name" data-aos="fade-up" data-aos-delay="200">
-          <p class="jello">R</p>
-          <p class="jello">e</p>
-          <p class="jello">D</p>
-          <p class="jello">r</p>
-          <p class="jello">a</p>
-          <p class="jello">g</p>
-          &nbsp;
-          <p class="jello">T</p>
-          <p class="jello">r</p>
-          <p class="jello">a</p>
-          <p class="jello">n</p>
-          <p class="jello">.</p>
+          <p class="jello-text">ReDrag Tran.</p>
         </article>
-
         <article id="work" data-aos="fade-up" data-aos-delay="400">
-          <div>
-            <p class="jello">W</p>
-            <p class="jello">e</p>
-            <p class="jello">b</p>
-            <p class="jello"></p>
-          </div>
-
-          <div>
-            <p class="jello">D</p>
-            <p class="jello">e</p>
-            <p class="jello">v</p>
-            <p class="jello">e</p>
-            <p class="jello">l</p>
-            <p class="jello">o</p>
-            <p class="jello">p</p>
-            <p class="jello">e</p>
-            <p class="jello">r</p>
-          </div>
+          <p class="jello-text">Web Developer</p>
         </article>
 
         <p id="info-para" data-aos="fade-up" data-aos-delay="600">
-          • 🌱 First-year Student ⚡<br />  
-          • 👶🏻 New to coding community 💻 
+          • 🌱 First-year Student ⚡<br />
+          • 👶🏻 New to coding community 💻
         </p>
 
         <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
@@ -204,238 +177,253 @@
               <p class="letsTalkBtn-text">Let's Talk!</p>
               <span class="letsTalkBtn-BG"></span>
             </button></a>
-          <div class="setting-container" id="setting-container">
-            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
 
-            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+          <!--========== SETTINGS ==========-->
+          <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting"/>
+            <label for="switchforsetting" title="Settings" class="needtobeinvert" id="labelforsetting" tabindex="0"
               aria-label="settings for sound and appearance"></label>
 
-            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
-              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+            <div title="Toggle Dark Mode" class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+              <input type="checkbox" id="switchforvisualmode"/>
               <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
                 aria-label="switch appearance"></label>
             </div>
 
-            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
-              <input type="checkbox" id="switchforsound" onclick="playpause()" />
+            <div title="Toggle Sounds" class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+              <input type="checkbox" id="switchforsound"/>
               <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
                 class="needtobeinvert"></label>
             </div>
+
+            <div title="Toggle Circular Cursor" class="cursortogglebuttoncontainer" id="cursortogglebuttoncontainer">
+              <input type="checkbox" id="switchforcursor"/>
+              <label for="switchforcursor" id="labelforcursor" tabindex="0" aria-label="switch cursor"
+                class="needtobeinvert"></label>
+            </div>
           </div>
-          <!-- setting div ends -->
         </div>
-        <!-- contact-btn-div -->
       </div>
-     
+
+      <!--=========== CODING GIF ===========-->
+      <div class="testfool">
+        <dotlottie-player src="https://lottie.host/63b031d6-d811-46d5-b233-22e025d8a9a5/r1vB1p1vng.lottie"
+          background="transparent" speed="1" style="width: 500px; height: 500px" loop autoplay></dotlottie-player>
+      </div>
+
+      <!--========== SCROLL DOWN BUTTON ==========-->
+      <section id="scroll-down" class="down">
+        <h1></h1>
+        <a href="#about"><span></span></a>
+      </section>
+
     </section>
-    <!-- landing page ends here -->
+
+    <!--========== ABOUT ME ==========-->
     <section class="about-section-container" id="about" data-aos="fade-up">
       <div class="about-section">
         <div class="section-heading">
           <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            &#60;/AboutMe&#62;
+            &lt;/AboutMe&gt;
           </h2>
           <p class="sectionHeadingP"></p>
         </div>
 
-        <div class="info-dp-section">
+        <!--========== INFO SECTION ==========-->
+        <div class="info-section">
           <div class="about-info">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <div class=" glass__box" data-aos="fade-up">
+              <div class="terminal_toolbar">
+                <div class="butt">
+                  <button class="btn btn__red btn-color"></button>
+                  <button class="btn btn__yellow"></button>
+                  <button class="btn btn__green"></button>
+                </div>
+                <p class="user">redrag@admin: ~</p>
+              </div>
 
-            <p tabindex="0">
-              Hi! My name is <span style="color: rgb(127, 63, 191); font-weight: bold;">Tuan Kiet</span>, people call me 
-              <span style="color: rgba(255, 0, 0, 0.655); font-weight: bold; font-style: italic;">ReDrag</span> or 
-              <span style="color: rgba(255, 166, 0, 0.837); font-weight: bold; font-style: italic;">Timmy</span> for short. I was born in 2005 in VietNam. 
-              My entire youth was spent being an introvert. I found it easier to interact with others over the internet. 
-              Dealing with them so much, computers began to pique my interest. 
-            </p>
-            <br />
-            <p tabindex="0">
-              I once came onto video of <span style="color: rgb(95, 168, 228); font-weight: bold;">Wix</span>  - 
-              a website builder for novices - while searching <span style="color: rgba(255, 0, 0, 0.655); font-weight: bold;">Youtube</span> for something. 
-              Then I clicked on it and so soon I had an intense curiosity in creating a website 🕸️. 
-              I became fond of web development. Creating custom web pages taught
-              me a lot about design & development as well! 
-            </p>
-            <br />
-            <p tabindex="0">
-              For now, I am a freshman at FPT University, majoring in Software Engineering💻. 
-              My objective is to become a <span style="color: rgb(242, 113, 235); font-weight: bold;">full-stack developer</span>, 
-              but for the time being, I am working as an <span style="color: rgb(215, 70, 34); font-weight: bold;">IELTS tutor</span>. 
-              The work is unrelated to my major, yet it provides me with an income 💰 that will allow me 
-              to pursue my passion 😍 in the not too distant future.
-            </p>
-             <!-- Resume button -->
-      <button class="resume-btn" id="resume-btn" onclick="openURL()">
-        <div class="sign">
-          <svg viewBox="0 0 640 512">
-            <path
-              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-          </svg>
-        </div>
+              <div class="terminal__content">
+                <p>
+                  <span id="term-spec">≥</span> Hi! My name is
+                  <span class="color-purple">Tuan Kiet</span>, people call me
+                  <span class="color-red italic">ReDrag</span> or
+                  <span class="color-orange italic">Timmy</span> for short.
+                  I was born in 2005 in VietNam. My entire youth was spent being an introvert.
+                  I found it easier to interact with others over the internet.
+                  Dealing with them so much, computers began to pique my interest.
+                </p>
 
-        <div class="text">Resume</div>
-      </button>
+                <p>
+                  <span id="term-spec">≥</span> I once came onto a video of
+                  <span class="color-light-blue">Wix</span> - a website builder for novices -
+                  while searching <span class="color-red">YouTube</span> for something.
+                  Then I clicked on it and so soon I had an intense curiosity in creating a website 🕸️.
+                  I became fond of web development. Creating custom web pages taught me a lot about design & development
+                  as well!
+                </p>
+
+                <p>
+                  <span id="term-spec">≥</span> For now, I am a freshman at FPT University,
+                  majoring in Software Engineering 💻. My objective is to become a
+                  <span class="color-pink">full-stack developer</span>, but for the time being, I am working as an
+                  <span class="color-dark-red">IELTS tutor</span>.
+                  The work is unrelated to my major, yet it provides me with an income 💰
+                  that will allow me to pursue my passion 😍 in the not too distant future.
+                </p>
+
+                <!--========== RESUME DOWNLOAD BUTTON ==========-->
+                <button class="resume-btn" id="resume-btn" onclick="openURL()">
+                  <div class="sign">
+                    <img src="assets/svg/resume.svg" alt="Resume Download Button">
+                  </div>
+                  <div class="resume-text">Resume</div>
+                </button>
+              </div>
+            </div>
           </div>
 
-          <div class="dp" data-aos="fade-up">
-            <img src="src/png/redrag.png" alt="ReDrag Tran" tabindex="0" aria-label="image of tuankiet" />
+          <!--========== ABOUT ME IMAGE ==========-->
+          <div class="about-img" data-aos="fade-up">
+            <img src="assets/webp/redrag.webp" alt="ReDrag Tran" aria-label="image of tuankiet" loading="lazy" />
           </div>
         </div>
       </div>
     </section>
-    <!-- about section ends  -->
 
+    <!--========== SKILLS & TOOLS ==========-->
     <section class="skills-section-container" id="skills">
       <div class="skills-section">
         <div class="section-heading" data-aos="fade-up">
           <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            &#60;/Skills&#62;
+            &lt;/Skills & Tools&gt;
           </h2>
           <p class="sectionHeadingP"></p>
         </div>
+      </div>
 
-        <div class="frontend-dev-section">
-          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
-            aria-label="As a frontend a developer these are the skills I have">
-            Tech Stack
-          </h3>
-          <ul class="tech-stack-wrapper">
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
-              <span class="tooltip">HTML</span>
-            </li>
+      <!--========== SKILLS ==========-->
+      <div class="skill-term-logo">
+        <div class=" glass__box" data-aos="fade-up">
+          <div class="terminal_toolbar">
+            <div class="butt">
+              <button class="btn btn__red btn-color"></button>
+              <button class="btn btn__yellow"></button>
+              <button class="btn btn__green"></button>
+            </div>
+            <p class="user">redrag@admin: ~</p>
+          </div>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
-              <span class="tooltip">CSS</span>
-            </li>
+          <div class="terminal__content">
+            <p><span id="term-spec"> ≥ Proficient in web development tools:</span>
+              <!-- <span class="">Astro</span>, <span class="">CSS</span>, <span class="">SCSS</span>, <span class="">Styled Components</span>, <span class="">SASS</span>.</p> -->
+            <p><span id="term-spec"> ≥ Well-versed in UI frameworks:</span>
+              Bootstrap and TailwindCSS for building responsive designs.</p>
+            <p><span id="term-spec"> ≥ Basic database knowledge:</span>
+              Experienced with MySQL for database management and queries.</p>
+          </div>
+        </div>
+        <!--========== SKILL LOGOS ==========-->
+        <div class="skill-logos" data-aos="fade-up"></div>
+      </div>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
-              <span class="tooltip">JS</span>
-            </li>
-            
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/reactlogo.png" alt="react skill" class="tech-stack-logo" />
-              <span class="tooltip">REACT</span>
-            </li>
+      <!--========== TOOLS ==========-->
+      <div id="tool-term-logo" class="skill-term-logo">
+        <!--========== TOOL LOGOS ==========-->
+        <div id="tool-logos" class="skill-logos" data-aos="fade-up"></div>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/bootstraplogo.png" alt="bootstrap skill" class="tech-stack-logo" />
-              <span class="tooltip">BOOTSTRAP</span>
-            </li>
+        <div id="tool-term" class=" glass__box" data-aos="fade-up">
+          <div class="terminal_toolbar">
+            <div class="butt">
+              <button class="btn btn__red btn-color"></button>
+              <button class="btn btn__yellow"></button>
+              <button class="btn btn__green"></button>
+            </div>
+            <p class="user">redrag@admin: ~</p>
+          </div>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/clogo.png" alt="c language skill" class="tech-stack-logo" />
-              <span class="tooltip">C</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/cpplogo.png" alt="c++ language skill" class="tech-stack-logo" />
-              <span class="tooltip">C++</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
-              <span class="tooltip">GIT</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
-              <span class="tooltip">GITHUB</span>
-            </li>
-            
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
-              <span class="tooltip">FIGMA</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/ailogo.png" alt="adobe illustrator skill" class="tech-stack-logo" />
-              <span class="tooltip">ADOBE AI</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/canvalogo.png" alt="canva skill" class="tech-stack-logo" />
-              <span class="tooltip">CANVA</span>
-            </li>
-          </ul>
+          <div class="terminal__content">
+            <p><span id="term-spec"> ≥ Familiar with tools like</span>
+              Visual Studio Code, Git, and IntelliJ IDEA for efficient development.</p>
+            <p><span id="term-spec"> ≥ Skilled in design tools such as</span>
+              Figma, Adobe Illustrator, and Photoshop.</p>
+            <p><span id="term-spec"> ≥ Comfortable working on</span>
+              Ubuntu for a seamless development experience.</p>
+          </div>
         </div>
       </div>
     </section>
-    <!-- skills section ends -->
+
+    <!--========== PROJECTS ==========-->
     <section class="projects-section-container" id="projects">
       <div class="projects-section-div">
         <div class="section-heading" data-aos="fade-up">
           <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
-            &#60;/Projects&#62;
+            &lt;/Projects&gt;
           </h2>
           <p class="sectionHeadingP"></p>
         </div>
-        <div class="project-boxes-div">
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/webp/project1_icon.webp" alt="project1 website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">Project1</article>
-                <p class="ProjectDescription">
-                  Prpject1: Coming Soon!
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/redrag2105/project1" target="_blank" class="github-redirect"
-                    aria-label="Visit Project1 on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://github.com/redrag2105/project1/" target="_blank" class="cta"
-                    aria-label="Visit Project1 Live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/png/page_preview.png" alt="Project1 website preview image" />
-              </div>
-            </div>
+
+        <button class="view-toggle-btn" id="view-toggle" data-aos="fade-up">Switch to Slider View</button>
+        
+        <div class="normal-view">
+          <div class="project-boxes-div" id="normal-view-items"></div>
+        </div>
+        
+        <div class="carousel" data-aos="fade-up">
+          <p class="carousel-text">Why you click so fast?</p>
+          <div class="slide" id="carousel-items"></div>
+          <div class="blog-buttons">
+            <button class="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                  stroke="black" stroke-width="36" />
+              </svg>
+            </button>
+            <button class="next">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  stroke="black" stroke-width="36" />
+              </svg>
+            </button>
           </div>
-          <!-- ---------------------- -->
         </div>
       </div>
     </section>
   </main>
-  <!-- main ends here -->
 
+  <!--========== FOOTER ==========-->
   <footer id="footer">
-    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
-      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    <button id="backtotopbutton">
+      <svg class="upArrow" viewBox="0 0 384 512" fill="#fff">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+        </path>
+      </svg>
     </button>
+
     <div class="footer-background">
       <div class="footer-blob"></div>
     </div>
     <div class="footer-foreground">
       <div class="footercontainer">
-        <div class="two-words">
-          <article tabindex="0" aria-label="Tough times create Strong Men, Strong Men create easy times, my quote">
+
+        <!--========== QUOTE ==========-->
+        <div class="quote">
+          <article aria-label="My fav quote">
             "Tough times create Strong Men, Strong Men create easy times."
           </article>
         </div>
+
+        <!--========== SOCIAL MEDIA ==========-->
         <div class="social-media-container">
           <div class="getintouch-heading">
             <article>GetinTouch();</article>
           </div>
           <div class="logos">
-            <a href="https://www.instagram.com/redrag_21/" target="_blank" tabindex="0"
-              aria-label="My instagram"><svg viewBox="0 0 448 512" class="SocialHandle">
+            <a href="https://www.instagram.com/redrag_21/" target="_blank" tabindex="0" aria-label="My instagram"><svg
+                viewBox="0 0 448 512" class="SocialHandle">
                 <path
                   d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
               </svg></a>
@@ -453,71 +441,37 @@
               </svg></a>
           </div>
         </div>
+
+        <!--========== FOOTER IMAGE ==========-->
         <div class="footer-avatar-container">
-          <img src="src/png/avt_footer1.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar"/>
-        </div> 
+          <img src="assets/webp/footer.webp" alt="avt-footer" class="footer-avatar-img" id="footer-wala-avatar"
+            loading="lazy" />
+        </div>
+
+        <!--========== FOOTER BOTTOM ==========-->
         <div class="footer-bottom">
           <article>
-            Design & Built with &#10084; by ReDrag Tran
-            &#169; 2024
+            Design & Built with ❤ by ReDrag Tran © 2024
           </article>
         </div>
       </div>
     </div>
   </footer>
-  <!-- footer ends here -->
 
-  <script src="main.js"></script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script type="module" src="main.js"></script>
 
   <script>
     function openURL() {
-      var url = "src/pdf/ReDrag Tran Resume.pdf";
-
+      var url = "assets/pdf/ReDrag Tran Resume.pdf";
       window.open(url, "_blank");
     }
   </script>
 
-  <script>
-    const cursorInner = document.getElementById("cursor-inner");
-    const cursorOuter = document.getElementById("cursor-outer");
-    const links = document.querySelectorAll("a,label,button");
-
-    document.addEventListener("mousemove", function (e) {
-      const posX = e.clientX;
-      const posY = e.clientY;
-
-      cursorInner.style.left = `${posX}px`;
-      cursorInner.style.top = `${posY}px`;
-
-      // cursorOuter.style.left = `${posX}px`;
-      // cursorOuter.style.top = `${posY}px`;
-
-      cursorOuter.animate(
-        {
-          left: `${posX}px`,
-          top: `${posY}px`,
-        },
-        { duration: 150, fill: "forwards" }
-      );
-
-      links.forEach((link) => {
-        link.addEventListener("mouseenter", () => {
-          cursorInner.classList.add("hover");
-          cursorOuter.classList.add("hover");
-        });
-        link.addEventListener("mouseleave", () => {
-          cursorInner.classList.remove("hover");
-          cursorOuter.classList.remove("hover");
-        });
-      });
-    });
-  </script>
-  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="redrag" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="18" data-y_margin="18"></script>
+  <!-- <div id="bmc">
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="redrag" data-description="Support me on Buy me a coffee!" data-message="" data-color="#bd5fff"
+      data-position="left" data-x_margin="18" data-y_margin="18">
+      </script>
+  </div> -->
 </body>
-
 </html>
