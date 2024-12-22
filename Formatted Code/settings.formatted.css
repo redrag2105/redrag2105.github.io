@@ -122,14 +122,14 @@
     position: relative;
     justify-content: center;
     width: 40px;
-    background-image: url(../svg/Mute_Icon.svg);
+    background-image: url(../svg/mute.svg);
     cursor: pointer;
     transition-duration: 0.5s;
 }
 
 #switchforsound:checked+#labelforsound {
     transition-duration: 0.5s;
-    background-image: url(../svg/Speaker_Icon.svg);
+    background-image: url(../svg/speaker.svg);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;

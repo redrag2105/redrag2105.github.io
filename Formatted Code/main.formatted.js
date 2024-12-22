@@ -183,18 +183,18 @@ document.addEventListener(
 
 // ===================== 6. Skills & Tools =====================
 const skillLogos = [
-  { icon: "./assets/svg/skills/file-type-html.svg", text: "HTML<br>✅" },
-  { icon: "./assets/svg/skills/css-color.svg", text: "CSS<br>✅" },
-  { icon: "./assets/svg/skills/javascript-fill.svg", text: "Javascript<br>✅" },
-  { icon: "./assets/svg/skills/react-dark.svg", text: "React<br>✅" },
+  { icon: "./assets/svg/skills/html.svg", text: "HTML<br>✅" },
+  { icon: "./assets/svg/skills/css.svg", text: "CSS<br>✅" },
+  { icon: "./assets/svg/skills/javascript.svg", text: "Javascript<br>✅" },
+  { icon: "./assets/svg/skills/react.svg", text: "React<br>✅" },
   { icon: "./assets/svg/skills/sass.svg", text: "Sass<br>✅" },
   {
-    icon: "./assets/svg/skills/styledcomponents.svg",
+    icon: "./assets/svg/skills/scomponents.svg",
     text: "Styled<br>Components<br>✅",
   },
-  { icon: "./assets/svg/skills/nodejs-dark.svg", text: "Node.js<br>🌱" },
-  { icon: "./assets/svg/skills/wordpress-icon.svg", text: "Wordpress<br>✅" },
-  { icon: "./assets/svg/skills/npm-wordmark.svg", text: "npm<br>✅" },
+  { icon: "./assets/svg/skills/nodejs.svg", text: "Node.js<br>🌱" },
+  { icon: "./assets/svg/skills/wordpress.svg", text: "Wordpress<br>✅" },
+  { icon: "./assets/svg/skills/npm.svg", text: "npm<br>✅" },
 ];
 
 const toolLogos = [
