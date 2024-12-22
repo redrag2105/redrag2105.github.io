@@ -1,0 +1,164 @@
+
+#labelforsetting,
+#labelforvisualmode,
+#switchforvisualmode:checked+#labelforvisualmode {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#labelforcursor,
+#labelforsetting,
+#labelforsound {
+    height: 40px;
+    background-size: 60%;
+}
+
+.setting-container {
+    width: 280px;
+    height: 50px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+#labelforsetting {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background-image: url(../svg/settings.svg);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.cursortogglebuttoncontainer,
+.soundtogglebuttoncontainer,
+.visualmodetogglebuttoncontainer {
+    align-items: center;
+    width: fit-content;
+    transition-duration: 0.3s;
+}
+
+
+.settingactivate {
+    width: 260px;
+}
+
+
+#switchforcursor,
+#switchforsetting,
+#switchforsound,
+#switchforvisualmode {
+    display: none;
+}
+
+#switchforsetting:checked+#labelforsetting {
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
+
+
+.visualmodetogglebuttoncontainer {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50px) scale(0);
+}
+
+.soundtogglebuttoncontainer {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    transform: translate(-130px) scale(0);
+}
+
+.cursortogglebuttoncontainer {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    transform: translate(-210px) scale(0);
+}
+
+.visualmodeshow {
+    transition-duration: 0.3s;
+    transform: translate(0) scale(1);
+}
+
+.soundmodeshow {
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    display: inline-block;
+    transform: translate(0) scale(1);
+}
+
+.cursormodeshow {
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+    display: inline-block;
+    transform: translate(0) scale(1);
+}
+
+#labelforvisualmode {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url(../webp/moon.webp);
+    background-size: 50%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#switchforvisualmode:checked+#labelforvisualmode {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+    background-image: url(../webp/sun.webp);
+    background-size: 60%;
+}
+
+#labelforsound {
+    position: relative;
+    justify-content: center;
+    width: 40px;
+    background-image: url(../svg/Mute_Icon.svg);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#switchforsound:checked+#labelforsound {
+    transition-duration: 0.5s;
+    background-image: url(../svg/Speaker_Icon.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#labelforcursor {
+    margin-left: 12px;
+    position: relative;
+    justify-content: center;
+    width: 22px;
+    background-image: url(../svg/cursoron.svg);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#switchforcursor:checked+#labelforcursor {
+    transition-duration: 0.5s;
+    background-image: url(../svg/cursoroff.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: matrix(-1, 0, 0, 1, 0, -2) rotate(954deg);
+}
+
+#labelforcursor,
+#labelforsound,
+#preloader {
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
