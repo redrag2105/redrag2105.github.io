@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /*======= SLIDER =======*/
+=======
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 .skill-term-logo {
 	width: 100%;
 	display: flex;
@@ -6,11 +9,16 @@
 	margin-top: 45px;
 }
 
+<<<<<<< HEAD
 #tool-term-logo {
 	margin-top: 165px;
 }
 
 @keyframes slide1 {
+=======
+
+@keyframes slide {
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 	from {
 		transform: translateX(0);
 	}
@@ -20,6 +28,7 @@
 	}
 }
 
+<<<<<<< HEAD
 @keyframes slide2 {
 	from {
 		transform: translateX(-100%);
@@ -30,11 +39,14 @@
 	}
 }
 
+=======
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 .skill-logos {
 	overflow: hidden;
 	padding: 60px 0;
 	white-space: nowrap;
 	position: relative;
+<<<<<<< HEAD
 	margin-right: 36%;
 	display: flex;
 	flex-direction: flex-start;
@@ -42,6 +54,9 @@
 
 #tool-logos {
 	margin-right: 0 !important;
+=======
+	margin-right: 30%;
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 }
 
 .skill-logos:before,
@@ -56,20 +71,32 @@
 
 .skill-logos:before {
 	left: 0;
+<<<<<<< HEAD
 	background: linear-gradient(to left, rgba(0, 0, 0, 0), var(--color-dark-mode));
+=======
+	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(17, 17, 27));
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 }
 
 .skill-logos:after {
 	right: 0;
+<<<<<<< HEAD
 	background: linear-gradient(to right, rgba(0, 0, 0, 0), var(--color-dark-mode));
 }
 
 .skill-logos:hover .logos-slide,
 #tool-logos:hover .logos-slide {
+=======
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(17, 17, 27));
+}
+
+.skill-logos:hover .logos-slide {
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 	animation-play-state: paused;
 }
 
 .logos-slide {
+<<<<<<< HEAD
 	display: flex;
 	animation: 15s slide1 infinite linear;
 }
@@ -86,11 +113,32 @@
 	gap: 13px;
 	justify-content: center;
 	column-gap: 1.5rem;
+=======
+	display: inline-block;
+	animation: 15s slide infinite linear;
+}
+
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+
+
+.skill-box {
+	display: flex;
+    height: auto;
+    gap: 13px;
+    justify-content: center;
+    column-gap: 1.5rem;
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 	margin-right: 25px;
 }
 
 .skill-border {
 	height: 90px;
+<<<<<<< HEAD
 	width: 85px;
 	display: flex;
 	/* background: #0e001b; */
@@ -105,6 +153,20 @@
 	transition: 0.2s ease-in-out;
 }
 
+=======
+    width: 85px;
+    display: flex;
+    background: rgba(14, 0, 27);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(19px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 .skill-img {
 	position: absolute;
 	transition: 0.2s ease-in-out;
@@ -112,13 +174,17 @@
 }
 
 .skill-text-div {
+<<<<<<< HEAD
 	color: #fff;
+=======
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 	opacity: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	transition: 0.2s ease-in-out;
+<<<<<<< HEAD
 	text-shadow: 0 0 3px red, 0 0 5px blue;
 	z-index: 2;
 
@@ -135,6 +201,25 @@
 }
 
 .skill-border:hover>.skill-img {
+=======
+	/* color: aqua; */
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	z-index: 2;
+	
+}
+
+.skill-text-div > .skill-txt-head {
+	font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skill-border:hover > .skill-text-div {
+	opacity: 1;
+}
+
+.skill-border:hover > .skill-img {
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 	height: 65%;
 	filter: blur(8px);
 	animation: anim 3s infinite;
@@ -146,7 +231,11 @@
 	}
 
 	50% {
+<<<<<<< HEAD
 		transform: translateY(-10px);
+=======
+		transform: translateY(-20px);
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 	}
 
 	100% {
@@ -166,11 +255,21 @@
 }
 
 .javascript {
+<<<<<<< HEAD
 	filter: invert(76%) sepia(15%) saturate(7243%) hue-rotate(355deg) brightness(103%) contrast(104%);
 }
 
 .wordpress {
 	filter: invert(30%) sepia(92%) saturate(836%) hue-rotate(169deg) brightness(98%) contrast(101%);
+=======
+	filter: invert(76%) sepia(15%) saturate(7243%) hue-rotate(355deg)
+		brightness(103%) contrast(104%);
+}
+
+.wordpress {
+	filter: invert(30%) sepia(92%) saturate(836%) hue-rotate(169deg)
+		brightness(98%) contrast(101%);
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 }
 
 
@@ -187,7 +286,10 @@
 		height: fit-content;
 		gap: 27px;
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 	.skill-border {
 		height: 117px;
 		width: 120px;
@@ -195,6 +297,7 @@
 		justify-content: center;
 		align-items: center;
 	}
+<<<<<<< HEAD
 
 	.skill-text-div {
 		gap: 0;
@@ -204,27 +307,45 @@
 		width: 7.9rem;
 	}
 
+=======
+	.skill-text-div {
+		gap: 0;
+	}
+	.skill-icon {
+		width: 7.9rem;
+	}
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 	.skill-icon .javascript {
 		width: 170px;
 	}
 }
 
 @media (min-width: 1200px) {
+<<<<<<< HEAD
 	.skill-text-div>.skill-txt-head {
+=======
+	.skill-text-div > .skill-txt-head {
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 		font-size: 1.5rem;
 		font-weight: 700;
 		text-align: center;
 		font-size: 2rem;
 	}
+<<<<<<< HEAD
 
 	.skill-icon {
 		width: 78px;
 	}
+=======
+	.skill-icon {
+		width: 78px;	}
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
 
 	.skill-icon .javascript {
 		width: 170px;
 	}
 }
+<<<<<<< HEAD
 
 /*======= MAC TERMINAL =======*/
 .terminal_toolbar {
@@ -359,3 +480,5 @@
 	}
 }
 
+=======
+>>>>>>> c8253af7cca21e228e82405509b3e9bba37ad73b
