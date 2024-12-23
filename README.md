@@ -1,4 +1,4 @@
-# ReDrag Tran - Personal Portfolio Website 
+# ReDrag - Personal Portfolio Website
 
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-brightgreen.svg)](https://github.com/redrag2105/redrag2105.github.io)
 [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://redrag2105.github.io/)
@@ -13,17 +13,18 @@
 
 ## 📚 Table of Contents
 
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Technologies & Libraries](#technologies-and-libraries)
-4. [Setup and Installation](#setup-and-installation)
-5. [Usage](#usage)
-6. [Credits](#credits)
-7. [Contact](#contact)
+1. [Sneak peek](#sneak-peek)
+2. [Overview](#overview)
+3. [Features](#features)
+4. [Technologies & Libraries](#technologies-and-libraries)
+5. [Setup & Installation](#setup-and-installation)
+6. [Usage](#usage)
+7. [Credits](#credits)
+8. [Contact](#contact)
 
 ---
 
-## 📌Sneak Peek 👀
+## 📌Sneak Peek👀
 ![Page Review](https://github.com/ReDrag21/ReDrag/blob/eccd1b725f779e817957c4383a8738d33da7dcbd/web_preview.png)
 
 ![Page Review](https://github.com/ReDrag21/ReDrag/blob/8453d758f27e3a5099705d008785bc95887100ed/web_preview_light.png)
@@ -86,6 +87,8 @@ This portfolio website is a dynamic and interactive way to highlight my skills, 
 ---
 
 ## 🛠Setup and Installation
+
+#### Feel free to use this as a portfolio template
 
 1. Clone the repository:
    ```bash
