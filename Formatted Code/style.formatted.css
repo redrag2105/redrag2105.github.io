@@ -275,6 +275,9 @@ html {
 .italic {
     font-style: italic;
 }
+.bold {
+    font-weight: bold;
+}
 
 .color-light-blue {
     color: #5fa8e4;

@@ -326,13 +326,10 @@
 	margin-bottom: 0.7em;
 }
 
-.terminal__content span {
-	font-weight: bold;
-}
-
 #term-spec {
 	color: var(--term-spec);
 	text-shadow: 0 0 1.8px var(--term-spec-shadow);
+	font-weight: bold;
 }
 
 #tool-term {
