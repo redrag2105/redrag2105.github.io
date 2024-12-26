@@ -2,9 +2,9 @@
 
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-brightgreen.svg)](https://github.com/redrag2105/redrag2105.github.io)
 [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://redrag2105.github.io/)
-[![Author](https://img.shields.io/badge/Author-ReDrag-purple.svg)](https://www.instagram.com/redrag_21)
-[![Latest Release](https://img.shields.io/badge/Latest%20Update-22%20December%202024-yellow.svg)](https://github.com/redrag2105/redrag2105.github.io)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/redrag2105/redrag2105.github.io/blob/master/LICENSE)
+[![Author](https://img.shields.io/badge/Author-ReDrag-purple.svg)](https://github.com/redrag2105)
+[![Latest Update](https://img.shields.io/badge/Latest%20Update-22%20December%202024-yellow.svg)](https://redrag2105.github.io)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/redrag2105/redrag2105.github.io/main/LICENSE)
 ### <a href="https://redrag2105.github.io/" target="_blank">**Visit Now** 🚀</a>
 <!--![Visitors]()
 ![Stars](https://img.shields.io/github/stars/redrag2105/redrag2105.github.io?style=social) -->
