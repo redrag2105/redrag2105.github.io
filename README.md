@@ -81,7 +81,7 @@ This portfolio website is a dynamic and interactive way to highlight my skills, 
 
 ![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-24292f?style=for-the-badge&logo=github&logoColor=white)
 ### Libraries & Tools
-- **AOS (Animate On Scroll)**: Smooth scroll animations.
+- **AOS (Animate On Scroll)**: Scroll animations for elements.
 - **dotLottie Player**: Rendering of Lottie GIF.
 
 ---
